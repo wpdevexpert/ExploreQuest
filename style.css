@@ -10,7 +10,7 @@
 }
 
 .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -122,6 +122,10 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: var(--primary-color);
+}
+
+.mobile-nav {
+    display: none;
 }
 
 /*****Hero Section*******/
@@ -583,4 +587,93 @@ footer {
 .copyrights {
     font-size: 16px;
     font-weight: 300;
+}
+
+/* responsive style */
+@media only screen and (max-width:570px) {
+    img {
+        max-width: 100%;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    header,
+    main,
+    footer {
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    form.search-form {
+        flex-direction: column;
+    }
+
+    section.hero-area {
+        padding: 50px;
+    }
+
+    .popular-tours,
+    .why-choose-card,
+    .why-choose-card,
+    .why-choose-card2,
+    .perfect-place,
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .perfectplace-image img {
+        width: 100%;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .image-tittle img {
+        width: 100%;
+    }
+
+    .newsletter-image {
+        width: 100%;
+    }
+
+    .tour-details {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .t-p-l>.tour-details {
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .saveup {
+        top: 67%;
+        left: 25%;
+        width: 244px;
+        height: 105px;
+    }
+
+    .saveup p {
+        padding-top: 25px;
+        font-size: 0.9rem;
+    }
+
+    .saveup h4 {
+        color: #FFF;
+        font-size: 1.6rem;
+        font-weight: 800;
+    }
 }
