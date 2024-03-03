@@ -15,7 +15,6 @@
 }
 
 p {
-    color: #FFF;
     font-family: Mulish;
     font-size: 16px;
     font-weight: 400;
@@ -28,6 +27,69 @@ h1 {
     font-size: 64px;
     font-weight: 800;
     margin-bottom: 24px;
+}
+
+h2 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+h5 {
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.button {
+    cursor: pointer;
+    border: 1px solid #FF5400;
+    padding: 13px 34px;
+    align-items: center;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: white;
+    background-color: #131318;
+    border-color: #131318;
+}
+
+.section-title {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.section-p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.center {
+    text-align: center;
+}
+
+.fa-solid {
+    color: var(--primary-color);
+    font-size: 18px;
 }
 
 /******Header section******/
@@ -64,6 +126,7 @@ header nav ul li a:hover {
 
 /*****Hero Section*******/
 section.hero-area {
+    margin-bottom: 100px;
     padding: 100px 185px;
     text-align: center;
     border-radius: 16px;
@@ -72,6 +135,7 @@ section.hero-area {
 
 section.hero-area p {
     margin-bottom: 48px;
+    color: white;
 }
 
 form.search-form {
@@ -103,7 +167,8 @@ form.search-form select:focus {
     border: 0;
 }
 
-form.search-form input[type="submit"] {
+form.search-form button {
+    width: 100%;
     border-radius: 8px;
     background-color: var(--primary-color);
     color: #FFF;
@@ -113,6 +178,409 @@ form.search-form input[type="submit"] {
     cursor: pointer;
 }
 
+form.search-form button i {
+    color: #FFF;
+}
+
 form.search-form input[type="submit"]:hover {
     background-color: #131318;
+}
+
+/*****Popular Tours Section******/
+.popular-tours {
+    margin-bottom: 100px;
+    color: #131318;
+    display: flex;
+    gap: 50px;
+}
+
+.popular-tours h2 {
+    margin-bottom: 24px;
+}
+
+.popular-tours p {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.popular-tours ul {
+    padding-left: 20px;
+}
+
+.popular-tours ul li {
+    margin-bottom: 20px;
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/*****Destination******/
+.destination {
+    margin-bottom: 100px;
+}
+
+.destination-content {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.image-tittle img {
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.image-tittle h3 {
+    position: relative;
+    top: -180px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    object-fit: cover;
+    image-resolution: 100%;
+}
+
+/******Why Choose Us******/
+section.why-choose-us {
+    margin-bottom: 100px;
+}
+
+.why-choose-content {
+    text-align: center;
+}
+
+.why-choose-card {
+    display: flex;
+    gap: 26px;
+    margin-top: 45px;
+}
+
+.card {
+    width: 573px;
+    height: 284px;
+    padding: 33px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.card-tittle {
+    padding: 32px 0 16px;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.card-p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.card-bg2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.why-choose-card2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.card-bg3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+/*******Deals********/
+.deals-and-discounts {
+    margin-bottom: 100px;
+}
+
+.deal-content {
+    text-align: center;
+}
+
+.tourpackage-container {
+    margin: 48px 0;
+}
+
+.tourpackage {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 500px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.deals-1 {
+    background: url(images/deals-1.png), lightgray 50% / cover no-repeat;
+}
+
+.deals-2 {
+    background: url(images/deals-2.png), lightgray 50% / cover no-repeat;
+}
+
+.t-p-l {
+    flex-direction: row;
+}
+
+.t-p-l>.tour-details {
+    margin-left: 56px;
+}
+
+.tour-details {
+    width: 579px;
+    height: 389px;
+    margin-right: 56px;
+    padding: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+
+.details {
+    display: flex;
+    gap: 24px;
+}
+
+.tour-price {
+    color: var(--primary-color);
+    font-weight: 800;
+    margin: 16px 0 24px;
+}
+
+/*****Perfect Place******/
+.perfect-place {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+
+.perfectplace-content ul {
+    padding-left: 25px;
+
+}
+
+.perfectplace-content ul li {
+    padding-right: 66px;
+    padding-bottom: 16px;
+    color: #131318;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.perfectplace-content p {
+    padding: 18px 0 25px;
+}
+
+.perfectplace-image h4 {
+    width: 250px;
+    text-align: center;
+    position: relative;
+    left: 180px;
+    top: -230px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+/*****Perfect place section******/
+.perfect-place {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 50px;
+}
+
+.perfectplace-content {
+    padding-top: 20px;
+}
+
+.perfectplace-content ul {
+    padding-left: 25px;
+
+}
+
+.perfectplace-content ul li {
+    /* padding: 10px 20px; */
+    padding-right: 66px;
+    padding-bottom: 16px;
+}
+
+.perfectplace-content>button {
+    margin-top: 10px;
+}
+
+.perfect-p {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.perfectplace-content p {
+    padding: 18px 0 25px;
+}
+
+/* .perfectplace-image{
+    width: 610px;
+    height: 424px;
+} */
+.perfectplace-image h4 {
+    width: 250px;
+    text-align: center;
+    position: relative;
+    left: 180px;
+    top: -230px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+/* newsletter section */
+.newsletter {
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.newsletter-content {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+    background: #FFF;
+}
+
+.newsletter-content h3 {
+    margin-bottom: 16px;
+    color: #131318;
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+.newsletter-input {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.newsletter-input input {
+    border: 0;
+    margin-bottom: 16px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 1rem;
+    font-weight: 400;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.newsletter-image {
+    width: 672px;
+    height: 422px;
+    border-radius: 16px;
+    background: url(images/newslatter.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.saveup {
+    position: relative;
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+}
+
+.saveup p {
+    padding-top: 25px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.saveup h4 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+footer {
+    padding: 100px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-content {
+    max-width: 769px;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+
+.footer-p {
+    margin: 15px 0 33px;
+}
+
+.social-icons {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+}
+
+.social-icons ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.social-icons ul li i {
+    font-size: 24px;
+    color: #131318;
+}
+
+.social-icons ul li:hover i {
+    color: var(--primary-color);
+}
+
+.copyrights {
+    font-size: 16px;
+    font-weight: 300;
 }
